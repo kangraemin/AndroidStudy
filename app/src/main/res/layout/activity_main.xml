@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@android:color/holo_blue_light"
-        android:gravity="center"
         android:text="Raemin Babo!"
         android:textColor="@android:color/holo_red_light"
-        android:textSize="30sp">
+        android:textSize="30sp"
+        android:layout_centerInParent="true">
     </TextView>
-</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:text="Raemin Babo!"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/TextView1"
+        android:layout_centerVertical="true"
+>
+    </TextView>
+
+
+</RelativeLayout>
 
