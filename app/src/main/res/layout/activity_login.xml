@@ -2,131 +2,144 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#FFFFFF"
-    android:paddingTop="16dp"
+    android:orientation="vertical"
     android:paddingLeft="16dp"
+    android:paddingTop="16dp"
     android:paddingRight="16dp">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="10"
-        >
+        android:weightSum="10">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:drawableLeft="@drawable/baseline_arrow_back_ios_black_18dp"
-        android:text="Back"
-        android:background="@android:color/white">
-    </Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="&lt; Back"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:src="@drawable/hrlogo"
-        android:layout_marginBottom="20dp">
 
-    </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/hrlogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed with your"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Login"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:text="Proceed with your"
-        android:textSize="20dp">
-
-    </TextView>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:text="Login"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:layout_marginBottom="40dp"
-        >
-    </TextView>
-
-
-        
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:text="Username"></TextView>
+        android:text="Username"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
         android:gravity="center"
-        android:weightSum="10"
-        >
-
-    <EditText
-        android:hint="DURAR0045"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_weight="7.5">
-    </EditText>
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/baseline_person_outline_black_18dp"
-        android:layout_weight="2.5"
-        ></ImageView>
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:text="Password"></TextView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:weightSum="10"
-        >
-    <EditText
-        android:hint="*************************"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_weight="7.5"></EditText>
+        android:layout_marginBottom="30dp"
+        android:weightSum="10">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="7.5"
+            android:hint="DURAR0045" />
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/baseline_vpn_key_black_18dp"
             android:layout_weight="2.5"
-            ></ImageView>
+            android:src="@drawable/baseline_person_outline_black_18dp" />
 
     </LinearLayout>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Login"
-        android:textColor="@android:color/white"
-        android:background="@drawable/btn_red">
 
-    </Button>
-    <Button
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@android:color/white"
-        android:text="Forgot Password?"
-        android:textColor="@android:color/darker_gray">
-        
-    </Button>
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="7.5"
+            android:hint="*************************" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="2.5"
+            android:src="@drawable/baseline_vpn_key_black_18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_red"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="Forgot Password?"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+
+    </LinearLayout>
 
 </LinearLayout>
