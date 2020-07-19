@@ -10,6 +10,6 @@ public class MainActivity extends AppCompatActivity{
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.login_realtivelayout);
+            setContentView(R.layout.consistant_login);
         }
 }
