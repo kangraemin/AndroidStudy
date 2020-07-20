@@ -7,21 +7,14 @@
     android:paddingTop="16dp"
     android:paddingRight="10dp">
 
-    <RelativeLayout
-        android:id="@+id/Back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true">
-
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="&lt; Back"
             android:textColor="@android:color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
-
-    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
