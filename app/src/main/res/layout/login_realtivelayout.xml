@@ -7,134 +7,137 @@
     android:paddingTop="16dp"
     android:paddingRight="10dp">
 
-        <TextView
-            android:id="@+id/Back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="&lt; Back"
-            android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-    <RelativeLayout
+    <TextView
+        android:id="@+id/textViewBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/Back"
-        android:paddingLeft="10dp">
+        android:text="&lt; Back"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/hr_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
-            android:src="@drawable/hrlogo" />
+    <ImageView
+        android:id="@+id/imageViewHrLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewBack"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="10dp"
+        android:src="@drawable/hrlogo" />
+
+    <TextView
+        android:id="@+id/textViewProceedWithYour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewHrLogo"
+        android:paddingLeft="10dp"
+        android:text="Proceed with your"
+        android:textColor="@android:color/black"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewProceedWithYour"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="10dp"
+        android:text="Login"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLogin"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="10dp"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+
+    <EditText
+        android:id="@+id/editTextDURAR0045"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewUsername"
+        android:paddingLeft="10dp"
+        android:text="DURAR0045"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPersonOutline"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textViewUsername"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp"
+        android:src="@drawable/baseline_person_outline_black_18dp" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextDURAR0045"
+        android:paddingLeft="10dp"
+        android:text="Password"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPassword"
+        android:paddingLeft="10dp"
+        android:text="********************"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/imageViewKey"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textViewPassword"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/baseline_vpn_key_black_18dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutRedColorBackground"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_red">
 
         <TextView
-            android:id="@+id/Proceeed_with_your"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/hr_logo"
-            android:text="Proceed with your"
-            android:textColor="@android:color/black"
-            android:textSize="24dp" />
-
-        <TextView
-            android:id="@+id/login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/Proceeed_with_your"
-            android:layout_marginBottom="50dp"
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp"
             android:text="Login"
-            android:textColor="@android:color/black"
-            android:textSize="24dp"
-            android:textStyle="bold" />
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayoutRedColorBackground"
+        android:layout_marginTop="10dp">
 
         <TextView
-            android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/login"
-            android:layout_marginTop="50dp"
-            android:text="Username"
-            android:textColor="@android:color/black"
-            android:textSize="16dp" />
-
-
-        <EditText
-            android:id="@+id/DURAR0045"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/username"
-            android:text="DURAR0045"
-            android:textSize="18dp" />
-
-        <ImageView
-            android:id="@+id/person_image"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_below="@+id/username"
-            android:layout_alignParentRight="true"
-            android:paddingRight="5dp"
-            android:src="@drawable/baseline_person_outline_black_18dp" />
-
-        <TextView
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/DURAR0045"
-            android:textColor="@android:color/black"
-            android:textSize="16dp" />
-
-        <EditText
-            android:id="@+id/edit02"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/password"
-            android:text="********************"
-            android:textSize="18dp" />
-
-        <ImageView
-            android:id="@+id/key"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_below="@+id/password"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/baseline_vpn_key_black_18dp" />
-
-        <RelativeLayout
-            android:id="@+id/login_red"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/edit02"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/btn_red">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="Login"
-                android:textColor="@android:color/white"
-                android:textSize="20dp" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/forgot_password"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/login_red">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="Forgot Password?"
-                android:textSize="20dp" />
-
-        </RelativeLayout>
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp"
+            android:text="Forgot Password?"
+            android:textSize="20dp" />
 
     </RelativeLayout>
 
