@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="10dp"
+    android:paddingTop="16dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt; Back"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_hrlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_back"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="10dp"
+        android:src="@drawable/hrlogo" />
+
+    <TextView
+        android:id="@+id/tv_proceed_with_your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_hrlogo"
+        android:paddingLeft="10dp"
+        android:text="Proceed with your"
+        android:textColor="@android:color/black"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_proceed_with_your"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="10dp"
+        android:text="Login"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="10dp"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+
+    <EditText
+        android:id="@+id/et_durarR0045"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_username"
+        android:paddingLeft="10dp"
+        android:text="DURAR0045"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/img_person"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_username"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp"
+        android:src="@drawable/baseline_person_outline_black_18dp" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_durarR0045"
+        android:paddingLeft="10dp"
+        android:text="Password"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_password"
+        android:paddingLeft="10dp"
+        android:text="********************"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/img_key"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_password"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/baseline_vpn_key_black_18dp" />
+
+    <TextView
+        android:id="@+id/tv_login_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_red"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_login_white"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="Forgot Password?"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+
