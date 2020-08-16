@@ -4,27 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    android:paddingLeft="16dp"
-    android:paddingTop="16dp"
-    android:paddingRight="16dp">
+    android:paddingLeft="16sp"
+    android:paddingTop="16sp"
+    android:paddingRight="16sp">
 
     <TextView
         android:id="@+id/tv_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:text="&lt;Back"
         android:textColor="@android:color/black"
-        android:textSize="40dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="20"/>
 
     <ImageView
         android:id="@+id/img_hr_logo"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20sp"
+        android:paddingLeft="10sp"
         android:src="@drawable/hrlogo"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_back" />
@@ -32,85 +33,93 @@
 
     <TextView
         android:id="@+id/tv_proceed_with_your"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20sp"
+        android:paddingLeft="10sp"
         android:text="Proceed with your"
         android:textColor="@android:color/black"
-        android:textSize="48dp"
-        app:layout_constraintTop_toBottomOf="@+id/img_hr_logo" />
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/img_hr_logo"
+        app:layout_constraintHeight_percent="0.1" />
 
     <TextView
         android:id="@+id/tv_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10sp"
         android:text="Login"
         android:textColor="@android:color/black"
-        android:textSize="52dp"
+        android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/tv_proceed_with_your" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_proceed_with_your"
+        app:layout_constraintWidth_percent="0.1" />
 
     <TextView
         android:id="@+id/tv_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="100sp"
+        android:paddingLeft="10sp"
         android:text="Username"
         android:textColor="@android:color/black"
-        android:textSize="32dp"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_login"
+        app:layout_constraintWidth_percent="0.1" />
 
     <EditText
         android:id="@+id/et_durarR0045"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="DURAR0045"
-        android:paddingLeft="10dp"
-        android:textSize="40dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+        android:paddingLeft="10sp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username"
+        app:layout_constraintWidth_percent="0.1"/>
 
     <ImageView
         android:id="@+id/img_person"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:paddingRight="10dp"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:paddingRight="10sp"
         android:src="@drawable/baseline_person_outline_black_18dp"
         app:layout_constraintRight_toRightOf="@+id/et_durarR0045"
-        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_username"
+        app:layout_constraintWidth_percent="0.1"/>
 
     <TextView
         android:id="@+id/tv_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:paddingLeft="16dp"
+        android:layout_marginTop="26sp"
+        android:paddingLeft="16sp"
         android:text="Password"
         android:textColor="@android:color/black"
-        android:textSize="20dp"
+        android:textSize="10sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/et_durarR0045" />
+        app:layout_constraintTop_toBottomOf="@+id/et_durarR0045"
+        app:layout_constraintWidth_percent="0.1"/>
 
     <EditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="******************"
-        android:paddingLeft="10dp"
-        android:textSize="40dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+        android:paddingLeft="10sp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password"
+        app:layout_constraintWidth_percent="0.1"/>
 
     <ImageView
         android:id="@+id/img_key"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:paddingRight="10dp"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:paddingRight="10sp"
         android:src="@drawable/baseline_vpn_key_black_18dp"
         app:layout_constraintRight_toRightOf="@+id/et_password"
-        app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_password"
+        app:layout_constraintWidth_percent="0.1"/>
 
     <TextView
         android:id="@+id/tv_login_white"
@@ -118,26 +127,28 @@
         android:layout_height="wrap_content"
         android:background="@drawable/btn_red"
         android:gravity="center"
-        android:layout_marginTop="20dp"
+        android:paddingTop="8sp"
         android:text="Login"
         android:textColor="@android:color/white"
-        android:textSize="60dp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        app:layout_constraintWidth_percent="0.1"/>
 
     <TextView
         android:id="@+id/tv_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:layout_marginTop="20sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
         android:text="Forgot Password?"
-        android:textSize="60dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_login_white" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_white"
+        app:layout_constraintWidth_percent="0.1"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
