@@ -1,5 +1,6 @@
 package com.example.androidstudy;
 
+
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -10,8 +11,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
+
 
     EditText et_email, et_password;
     RelativeLayout rl_btn01;
